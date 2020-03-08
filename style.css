@@ -4,6 +4,7 @@ body
     font-family: sans-serif;
     font-size: 1em;
     position: relative;
+    margin: 0;
     
 }
 
@@ -13,7 +14,7 @@ body
 {
     list-style-type: none;
     padding: 0;
-    margin: 2% 1% 0 1%;
+    margin: 2% 1.5% 0 1.5%;
     font-size: 0.8em;
 }
 
@@ -95,7 +96,7 @@ body
     top: 8.2em;
 }
 
-/* SEARCHBAR */
+/*** SEARCHBAR ***/
 
 #searchbar_container
 {
@@ -104,6 +105,7 @@ body
     width: 36em;
     padding: 0.72em 0.2em;
     border-radius: 24px;
+    background-color: white;
     background-image: url(images/search_icon.svg);
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -126,7 +128,7 @@ body
     box-shadow: 0 1px 6px 1px #dfe1e5;
 }
 
-/* SEARCHBAR BUTTONS */
+/*** SEARCHBAR BUTTONS ***/
 
 #searchbutton_container
 {
@@ -152,4 +154,55 @@ body
     box-shadow: 0 0 0.5px 1px #ccc;
 }
 
-/* FOOTER */
+/*** FOOTER ***/
+
+#footer_container
+{
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -3;
+    background-color: #F2F2F2;
+    color: #5F6368;
+    font-size: 0.95em;
+}
+
+.footer_chunk
+{
+    border-top: 1px solid #E4E4E4;
+    height: 2em;
+    padding: 0.4em 0 0.2em 2em;
+    line-height: 2em;
+}
+
+#footer_container ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer_nav li 
+{
+    display: inline-block;
+    margin: 0 0.9em;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+#footer_nav li:nth-child(1)
+{
+    margin-left: 0;
+}
+
+#footer_nav li a 
+{
+    text-decoration: none;
+    color: #5F6368;
+}
+
+#footer_nav li a:hover
+{
+    text-decoration: underline;
+}
